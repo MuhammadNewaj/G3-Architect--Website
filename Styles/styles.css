@@ -5,6 +5,11 @@
     margin: 0;
     font-family: "Work Sans", sans-serif;
 }
+
+.description{
+    color: #727272;
+    margin-bottom: 30px;
+}
 .btn-primary{
     padding: 20px 25px;background-color: #FF900E;
     border: none;
@@ -59,10 +64,10 @@ nav li a{
     font-size: 4rem;
     margin: 30px 0px;
 }
-.banner-description{
+/* .banner-content > .description{
     color: #727272;
     margin-bottom: 30px;
-}
+} */
 .banner-image{
     width: 100%;
     margin-top: 50px;
@@ -70,23 +75,26 @@ nav li a{
 
 /* Main Sections Styles */
 main{
-    max-width: 1440px ;
-    margin: 0px auto;
+    max-width: 70% ;
+    margin: 70px auto;
 }
 
 .team-Container{
     display: flex;
     align-items: center;
     gap: 70px;
-    margin: 50px auto;
+    margin: 0px auto;
 }
+
+
 .team-images{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+   
 }
 .team-content{
-    max-width: 540px;
+    max-width: 100%;
 }
 .team-title{
     font-weight: 400;
@@ -94,16 +102,20 @@ main{
     color: #727272;
     margin-bottom: 20px;
 }
-.team-title > span{
+.of-Our{
     font-weight: 700;
     color: #131313;
 }
-.team-title > span > .Features{
+.Features{
+    font-weight: 700;
     color: #FF900E;
 }
 .team-description{
     color: #727272;
     margin-bottom: 20px;
+}
+.timage{
+    max-width: auto;
 }
 
 
@@ -115,8 +127,18 @@ main{
     header{
         padding: 0px;
     }
-    nav{
+    nav, .team-Container{
         flex-direction: column;
+    }
+    .team-content{
+        text-align: center;
+    }
+    .timage{
+        max-width: 100%;
+    }
+    main{
+        max-width: 90% ;
+        margin: 40px auto;
     }
     
 }
@@ -125,7 +147,25 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .team-Container{
         flex-direction: column;
     }
+    .team-content{
+        text-align: center;
+    }
+    main{
+        max-width: 90% ;
+        margin: 40px auto;
+    }
+    .timage{
+        max-width: 25%;
+    }
+    .team-images{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+        
+    }
+    
+    
 }
