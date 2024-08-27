@@ -68,6 +68,47 @@ nav li a{
     margin-top: 50px;
 }
 
+/* Main Sections Styles */
+main{
+    max-width: 1440px ;
+    margin: 0px auto;
+}
+
+.team-Container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 50px auto;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.team-content{
+    max-width: 540px;
+}
+.team-title{
+    font-weight: 400;
+    font-size: 2.8rem ;
+    color: #727272;
+    margin-bottom: 20px;
+}
+.team-title > span{
+    font-weight: 700;
+    color: #131313;
+}
+.team-title > span > .Features{
+    color: #FF900E;
+}
+.team-description{
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+
+ 
+
 /* Responsive CSS */
 /* For Small devices */
 @media screen and (max-width: 576px) {
